@@ -6,11 +6,20 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Template</title>
+    <title>Github Lookup</title>
   </head>
   <body>
     <div class="container">
-      <h1>Is sass working?</h1>
+      <h1>Find a Github!</h1>
+      <form id="nameForm">
+          <div class="form-group text-center">
+            <div class="col-xs-4 col-xs-offset-4">
+              <label for="GithubName">Lookup a Github:</label>
+              <input id="GithubName" type="text" class="form-control" placeholder="Enter name">
+              <button id="GithubSubmit" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+      </form>
     </div>
   </body>
 </html>

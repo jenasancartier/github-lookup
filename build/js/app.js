@@ -4,8 +4,28 @@ exports.apiKey = "da6aec80c18887ef30bf6562816bc5839505a1c7";
 },{}],2:[function(require,module,exports){
 var apiKey = require('./../.env').apiKey;
 
-$(document).ready(function(){
+function Repos(){
+}
 
+Repos.prototype.getRepos = function(){
+    console.log("hi, i'm a repo object!")
+  }
+//   $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
+//     console.log(response);
+//   }).fail(function(error){
+//     console.log(error.responseJSON.message);
+//   });
+// };
+
+exports.reposModule = Repos;
+
+},{"./../.env":1}],3:[function(require,module,exports){
+var apiKey = require('./../.env').apiKey;
+var Repos = require("./../js/lookup.js").reposModule;
+
+$(document).ready(function(){
+  var currentReposObject = new Repos();
+  currentReposObject.getRepos();
 });
 
-},{"./../.env":1}]},{},[2]);
+},{"./../.env":1,"./../js/lookup.js":2}]},{},[3]);
