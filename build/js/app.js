@@ -8,7 +8,7 @@ var username;
 function Repos(){
 }
 
-Repos.prototype.getRepos = function(){
+Repos.prototype.getRepos = function(username){
   $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
     console.log(response);
     console.log(JSON.stringify(response));
@@ -22,6 +22,7 @@ exports.reposModule = Repos;
 },{"./../.env":1}],3:[function(require,module,exports){
 var apiKey = require('./../.env').apiKey;
 var Repos = require("./../js/lookup.js").reposModule;
+var username;
 
 $(document).ready(function(){
   var currentReposObject = new Repos();
