@@ -3,7 +3,7 @@
   "description": "",
   "main": "index.js",
   "authors": [
-    "Ewa Manek <manekej@gmail.com>"
+    "Jena SanCartier <jenasancartier@gmail.com>"
   ],
   "license": "ISC",
   "homepage": "",
@@ -15,8 +15,9 @@
     "tests"
   ],
   "dependencies": {
-  "jquery": "^3.1.1",
-  "bootstrap": "^3.3.7",
-  "moment": "^2.15.1"
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.15.1",
+    "animate.css": "^3.5.2"
   }
 }
