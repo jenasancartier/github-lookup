@@ -3,19 +3,19 @@ exports.apiKey = "da6aec80c18887ef30bf6562816bc5839505a1c7";
 
 },{}],2:[function(require,module,exports){
 var apiKey = require('./../.env').apiKey;
+var username;
 
 function Repos(){
 }
 
 Repos.prototype.getRepos = function(){
-    console.log("hi, i'm a repo object!")
-  }
-//   $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-//     console.log(response);
-//   }).fail(function(error){
-//     console.log(error.responseJSON.message);
-//   });
-// };
+  $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
+    console.log(response);
+    console.log(JSON.stringify(response));
+  }).fail(function(error){
+    console.log(error.responseJSON.message);
+  });
+};
 
 exports.reposModule = Repos;
 
@@ -25,7 +25,12 @@ var Repos = require("./../js/lookup.js").reposModule;
 
 $(document).ready(function(){
   var currentReposObject = new Repos();
-  currentReposObject.getRepos();
+  $("#githubSubmit").click(function(event){
+    event.preventDefault();
+    username = $("#githubName").val();
+    $("#githubName").val("");
+    currentReposObject.getRepos(username);
+  });
 });
 
 },{"./../.env":1,"./../js/lookup.js":2}]},{},[3]);

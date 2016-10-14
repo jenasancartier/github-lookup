@@ -3,5 +3,10 @@ var Repos = require("./../js/lookup.js").reposModule;
 
 $(document).ready(function(){
   var currentReposObject = new Repos();
-  currentReposObject.getRepos();
+  $("#githubSubmit").click(function(event){
+    event.preventDefault();
+    username = $("#githubName").val();
+    $("#githubName").val("");
+    currentReposObject.getRepos(username);
+  });
 });
