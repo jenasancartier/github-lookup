@@ -15,7 +15,7 @@ Technologies: HTML, CSS, JavaScript, jQuery, Bootstrap and modern JS apps
 2. _Move into the project folder_
 3. _Open in the code editor of your choice_
 4. _Run npm install_
-5. _Run gulp build to build the project for the first time and gulp serve to start the development server
+5. _Run gulp build to build the project for the first time and gulp serve to start the development server_
 6. _Voila! View the page in the localhost_
 
 ### Support & Contact
