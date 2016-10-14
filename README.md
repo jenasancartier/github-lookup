@@ -1,5 +1,6 @@
-# [Github Lookup]
 ![project screenshot](/img/screenshot.png)
+
+# [Github Lookup]
 
 __Version 1: October 14, 2016__
 ## by [J'ena SanCartier](https://github.com/jenasancartier)
