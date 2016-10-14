@@ -8,11 +8,13 @@ var username;
 function Repos(){
 }
 
-Repos.prototype.getRepos = function(username){
-  $.get('https://api.github.com/users/' + username + '?/repos/access_token=' + apiKey).then(function(response){
-    console.log(response.repos_url);
+Repos.prototype.getRepos = function(username, showRepo){
+  $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
+    $("#showRepo").text(username + 's Repositories:');
     console.log(response);
-    console.log(JSON.stringify(response));
+    for(var i = 0; i < response.length; i++){
+    showRepo(response[i].name, response[i].description);
+  }
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
@@ -25,15 +27,17 @@ var apiKey = require('./../.env').apiKey;
 var Repos = require("./../js/lookup.js").reposModule;
 var username;
 
+var showRepo = function(repoName, details){
+  $("#showRepo").append("<li>" + repoName + " is an app about " + details + ".</li>");
+};
+
 $(document).ready(function(){
   var currentReposObject = new Repos();
   $("#githubSubmit").click(function(event){
     event.preventDefault();
     username = $("#githubName").val();
     $("#githubName").val("");
-    var repository = currentReposObject.getRepos(username)
-    // currentReposObject.getRepos(username);
-    $("#showRepo").text(username)
+    currentReposObject.getRepos(username, showRepo);
   });
 });
 
