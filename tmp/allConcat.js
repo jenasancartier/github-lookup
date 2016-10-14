@@ -15,7 +15,7 @@ $(document).ready(function(){
     $("#showRepo").empty();
     username = $("#githubName").val();
     $("#githubName").val("");
-    $("#showName").text(username + "'s repositories:")
+    $("#showName").text(username + "'s repositories:");
     currentReposObject.getRepos(username, showRepo);
   });
 });
