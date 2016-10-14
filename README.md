@@ -1,28 +1,32 @@
-# _Template_
+# [Github Lookup]
+![project screenshot](/img/screenshot.png)
 
-#### By _Ewa Manek_
+__Version 1: October 14, 2016__
+## by [J'ena SanCartier](https://github.com/jenasancartier)
 
-## Description
+### Description
+A web application utilizing the Github API that allows a user to search a github user name and receive a list of the searched user's repositories and a brief description of each.
+Technologies: HTML, CSS, JavaScript, jQuery, Bootstrap and modern JS apps
 
-_A template for javascript with node.js in the backend, backend dependencies managed by gulp, frontend by bower, and css by sass_
+### Setup/Installation
+1. _Clone this repository at:_
+  * https://github.com/jenasancartier/github-lookup.git
+2. _Move into the project folder_
+3. _Open in the code editor of your choice_
+4. _Run npm install_
+5. _Run gulp build to build the project for the first time and gulp serve to start the development server
+6. _Voila! View the page in the localhost_
 
-## Setup/Installation Requirements
+### Support & Contact
+For questions or comments, please email me at [jenasancartier@gmail.com](mailto:jenasancartier@gmail.com)
 
-* _Copy the repository from GitHub_
-* _Open in code editor of your choice_
-* _Change the project name (and other info as necessary) in the package.json and bower.json files_
-* _Run npm install_
-* _run bower install_
-* _run gulp build to build the project for the first time and gulp serve to start the development server_
-* _assuming you get an alert and your h1 is kind of orangeypink you should be good to go!_
+### Known Issues
+* No known bugs as of 10.14.2016
 
+### Technologies Used
+HTML, CSS, Bootstrap, JavaScript, jQuery, Modern JS Apps (gulp, bower)
 
-## GitHub link
+### Legal
+*Licensed under the GNU General Public License v3.0*
 
-https://github.com/ewajm/gulp-template
-
-## Licensing
-
-* MIT
-
-Copyright (c) 2016 **_Ewa Manek_**
+Copyright (c) 2016 **Jena SanCartier**
