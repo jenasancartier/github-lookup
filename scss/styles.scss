@@ -1,16 +1,23 @@
 $blue: 	#CDEAF4;
 
-// .jumbotron {
-//   background-color: $blue;
-// }
+.jumbotron {
+  margin-top: 20px;
+}
 
 h1 {
   color: black;
   text-align: center;
+  font-family: 'Fredoka One', cursive;
 }
 
 h2 {
   text-align: center;
+  font-family: 'Fredoka One', cursive;
+}
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
 }
 
 button {
@@ -26,4 +33,5 @@ button {
   display: none;
   border-radius: 10px;
   border: solid 2px $blue;
+  margin-bottom: 20px;
 }
