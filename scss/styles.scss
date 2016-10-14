@@ -1,7 +1,11 @@
-$color: 	#d36154;
+$blue: 	#CDEAF4;
+
+// .jumbotron {
+//   background-color: $blue;
+// }
 
 h1 {
-  color: $color;
+  color: black;
   text-align: center;
 }
 
@@ -11,4 +15,15 @@ h2 {
 
 button {
   margin-top: 10px;
+}
+
+#octocat {
+  display: block;
+  margin: auto;
+}
+
+#results {
+  display: none;
+  border-radius: 10px;
+  border: solid 2px $blue;
 }
