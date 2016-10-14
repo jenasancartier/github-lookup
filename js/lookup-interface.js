@@ -8,6 +8,8 @@ $(document).ready(function(){
     event.preventDefault();
     username = $("#githubName").val();
     $("#githubName").val("");
-    currentReposObject.getRepos(username);
+    var repository = currentReposObject.getRepos(username)
+    // currentReposObject.getRepos(username);
+    $("#showRepo").text(username)
   });
 });
