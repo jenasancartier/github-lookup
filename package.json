@@ -1,7 +1,7 @@
 {
   "name": "github-lookup",
   "version": "1.0.0",
-  "description": "",
+  "description": "![project screenshot](/img/screenshot.png)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +22,13 @@
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.3",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jenasancartier/github-lookup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jenasancartier/github-lookup/issues"
   }
 }
