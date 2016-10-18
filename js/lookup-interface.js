@@ -3,7 +3,7 @@ var Repos = require("./../js/lookup.js").reposModule;
 var username;
 
 var showRepo = function(repoName, details){
-  $("#showRepo").append("<li>" + "<b>" + repoName + "</b>" + "<br>" + details + ".</li>");
+  $("#showRepo").append("<li>" + "<b>" + repoName + "</b>" + "<br>" + details + "</li>");
 };
 
 $(document).ready(function(){

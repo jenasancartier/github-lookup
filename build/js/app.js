@@ -13,10 +13,7 @@ Repos.prototype.getRepos = function(username, showRepo){
     $("#showRepo").text;
     console.log(response);
     for(var i = 0; i < response.length; i++){
-    showRepo(response[i].name, response[i].description);
-    // if (response[i].description === null) {
-
-    // }
+    showRepo(response[i].name, response[i].description || "");
   }
   }).fail(function(error){
     console.log(error.responseJSON.message);
@@ -31,7 +28,7 @@ var Repos = require("./../js/lookup.js").reposModule;
 var username;
 
 var showRepo = function(repoName, details){
-  $("#showRepo").append("<li>" + "<b>" + repoName + "</b>" + "<br>" + details + ".</li>");
+  $("#showRepo").append("<li>" + "<b>" + repoName + "</b>" + "<br>" + details + "</li>");
 };
 
 $(document).ready(function(){
