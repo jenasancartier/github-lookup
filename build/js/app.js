@@ -14,6 +14,9 @@ Repos.prototype.getRepos = function(username, showRepo){
     console.log(response);
     for(var i = 0; i < response.length; i++){
     showRepo(response[i].name, response[i].description);
+    // if (response[i].description === null) {
+
+    // }
   }
   }).fail(function(error){
     console.log(error.responseJSON.message);

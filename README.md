@@ -12,11 +12,13 @@ Technologies: HTML, CSS, JavaScript, jQuery, Bootstrap and modern JS apps
 ### Setup/Installation
 1. _Clone this repository at:_
   * https://github.com/jenasancartier/github-lookup.git
-2. _Move into the project folder_
-3. _Open in the code editor of your choice_
-4. _Run npm install_
-5. _Run gulp build to build the project for the first time and gulp serve to start the development server_
-6. _Voila! View the page in the localhost_
+2. _Move into the project's root directory_
+3. _Open the code editor of your choice_
+4. _Take '.env' out of the .gitignore file_
+5. _Add exports.apiKey=""; to the .env file, go grab a new api key from github and copy/paste it between those quotation marks_
+6. _Run npm install_
+7. _Run gulp build to build the project for the first time and gulp serve to start the development server_
+8. _Voila! View the page in the localhost_
 
 ### Support & Contact
 For questions or comments, please email me at [jenasancartier@gmail.com](mailto:jenasancartier@gmail.com)
